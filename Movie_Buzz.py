@@ -5,9 +5,6 @@ import pandas as pd
 clear = lambda : print("\n"*40)
 p = lambda x : sleep(x)
 
-df = pd.read_csv('movie.csv', encoding = 'unicode_escape')
-movie_list = list(df['title'])
-
 #input
 def gameMode():
     mode = input("Enter the type of game mode: \n"
@@ -221,4 +218,6 @@ if __name__ == '__main__':
     if mode == 'pvp':
         gamepvp(guess, rounds, diff, mode)
     elif mode == 'pve':
+        df = pd.read_csv('movie.csv', encoding='unicode_escape')
+        movie_list = list(df['title'])
         gamepve(guess, rounds, diff, mode)
