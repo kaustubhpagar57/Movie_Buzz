@@ -4,3 +4,4 @@ The Movie Buzz game is a movie name guessing game which enables the user to play
 number of guesses you get per round. The game also keeps tab of the score of players and is displayed after each round. The final score is diaplayed at the end of the game. 
 Language - Python
 The main file is Movie_Buzz.py
+Note : For the PvE mode to work you need to download the movie.csv file too and make sure to save both the files(Movie_Buzz.py and movie.csv) in the same directory.
